@@ -2,7 +2,7 @@
 
 面向 ZCode 桌面端的嘉然（Diana）日间 / 暗夜视觉蓝图。
 
-> **预发布状态：`0.1.0-rc.1`。** 本仓库公开 CSS、配色 token、美术布局契约与目标专用素材；构建相关的本机挂载器仍留在私有多合一启动器。最后一轮目标版本回归后再创建正式 Release。
+> **公开测试版：[`v0.1.0-beta.1`](https://github.com/lanmengSakura/diana-zcode-theme/releases/tag/v0.1.0-beta.1)。** 本仓库 Release 只提供 CSS、配色 token、美术布局契约与目标专用素材；版本限定的实验挂载入口另见公开 [Diana Multi-App Launcher Beta](https://github.com/lanmengSakura/diana-multi-app-launcher/releases/tag/v0.1.0-beta.1)。
 
 ## 源码组成
 

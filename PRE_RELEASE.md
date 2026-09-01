@@ -1,6 +1,6 @@
-# Diana ZCode Theme 0.1.0-rc.1
+# Diana ZCode Theme 0.1.0-beta.1
 
-Status: **source pre-release; visual blueprint only**.
+Status: **public GitHub Beta; standalone archive is a visual blueprint only**.
 
 ## Public implementation
 
