@@ -1,0 +1,14 @@
+{
+  "name": "diana-zcode-theme",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reviewable Diana day and night visual blueprint for ZCode.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lanmengSakura/diana-zcode-theme.git"
+  },
+  "scripts": {
+    "test": "node scripts/validate-release.mjs"
+  }
+}
