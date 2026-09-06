@@ -1,5 +1,9 @@
 # Diana ZCode Theme
 
+[在线体验 ZCode 主题](https://diana-launcher-demo.szbluedream01.chatgpt.site/themes?app=zcode) · [启动器演示](https://diana-launcher-demo.szbluedream01.chatgpt.site/)
+
+可切换日间、暗夜与原版参考，查看示例界面。网页不操作本机，演示效果不代表已完成真实挂载。
+
 面向 ZCode 桌面端的嘉然（Diana）日间 / 暗夜视觉蓝图。
 
 > **公开测试版：[`v0.1.0-beta.1`](https://github.com/lanmengSakura/diana-zcode-theme/releases/tag/v0.1.0-beta.1)。** 本仓库 Release 只提供 CSS、配色 token、美术布局契约与目标专用素材；版本限定的实验挂载入口另见公开 [Diana Multi-App Launcher Beta](https://github.com/lanmengSakura/diana-multi-app-launcher/releases/tag/v0.1.0-beta.1)。
