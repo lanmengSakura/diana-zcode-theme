@@ -3,9 +3,13 @@
  * validated main workspace surface, never over the sidebar or window controls.
  */
 
+html.diana-zcode-host .diana-zcode-workspace {
+  isolation: isolate;
+}
+
 html.diana-zcode-host #diana-zcode-chrome {
   position: absolute;
-  z-index: 0;
+  z-index: -1;
   inset: 0;
   overflow: hidden;
   pointer-events: none;

@@ -217,11 +217,13 @@ html.diana-zcode-host [data-workspace-sidebar-panel="true"] [data-testid="login-
 
 html.diana-zcode-host .diana-zcode-workspace {
   background-color: var(--diana-zcode-surface);
+  isolation: isolate;
 }
 
 html.diana-zcode-host #diana-zcode-chrome {
-  position: fixed;
-  z-index: 0;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   overflow: hidden;
   pointer-events: none !important;
   user-select: none !important;
