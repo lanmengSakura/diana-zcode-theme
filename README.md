@@ -6,13 +6,13 @@
 
 面向 ZCode 桌面端的嘉然（Diana）日间 / 暗夜视觉蓝图。
 
-> **公开测试版：[`v0.1.0-beta.1`](https://github.com/lanmengSakura/diana-zcode-theme/releases/tag/v0.1.0-beta.1)。** 本仓库 Release 只提供 CSS、配色 token、美术布局契约与目标专用素材；版本限定的旧版入口另见 [Diana Multi-App Launcher RC.7](https://github.com/lanmengSakura/diana-multi-app-launcher/releases/tag/v0.1.0-beta.4-rc.7)，不等于已支持所有 ZCode 版本。
+> **视觉蓝图测试版：[`v0.1.0-beta.1`](https://github.com/lanmengSakura/diana-zcode-theme/releases/tag/v0.1.0-beta.1)。** 本仓库 Release 只提供 CSS、配色 token、美术布局契约与目标专用素材。需要直接挂载，请使用 [Diana Multi-App Launcher RC.10](https://github.com/lanmengSakura/diana-multi-app-launcher/releases/tag/v0.1.0-beta.4-rc.10)：内置 **3.6.5.4145 / 3.16.3.8992** 适配，不代表任意版本都支持。
 
 ## 2026-10-26：新版兼容记录
 
 已在 **ZCode 3.16.3.8992** 的本机未登录工作区试验原布局，修正装饰容器层级，避免美术覆盖原生输入和弹窗；没有重新设计尺寸、素材或配色。日间、暗夜、跟随原生、撤下和再挂载已检查，但完整退出后普通重开等扩大验收尚未完成。
 
-本次仅同步公开视觉蓝图与 [兼容范围](COMPATIBILITY.md)，不提供新版一键调试适配器。启动器 `main` 新增的登记入口只有在用户本机另行批准、制作和校验适配器后才能使用；保存路径不是授权，旧 RC.7 下载包不会自动取得这些更新。
+**RC.10 交付更新：** 新版独立公开适配组件现由多合一启动器提供。普通用户无需个人 `local-runtime.json` 或作者目录：更新启动器，关联实际 `ZCode.exe`，完整退出 ZCode，再阅读风险提示并主动确认。RC.8/RC.9 只有本机登记入口，不包含此公开组件；旧 EXE 不会自动更新。精确版本、官方签名与程序资源摘要校验仍保留，见 [兼容范围](COMPATIBILITY.md)。
 
 ## 源码组成
 
@@ -35,9 +35,11 @@
 | `--diana-zcode-image-candy-wrapped` / `--diana-zcode-image-candy-lollipop` | 对应两张糖果素材 |
 | `--diana-zcode-image-acao-heart` / `--diana-zcode-image-acao-cheer` | 对应两张阿草素材 |
 
-## 为什么没有公开一键挂载器
+## 蓝图与公开启动器的区别
 
-ZCode 当前没有覆盖完整桌面工作区的稳定第三方主题 API。已验证方案必须先识别精确版本，再通过本地回环调试检查渲染器；适配器、调试参数、进程状态、日志与截图因此不进入公开仓库。这里的蓝图可以复核设计和差异，但不会自行修改 ZCode。
+本仓库继续只维护视觉蓝图，不自行修改 ZCode。公开挂载组件在 [多合一启动器仓库](https://github.com/lanmengSakura/diana-multi-app-launcher) 维护与打包，不复制作者的本机实验目录、路径、进程状态、登录态或日志。
+
+完整挂载使用用户明确确认后的临时回环调试接口。端口没有身份认证，同机其他进程可能读取界面、执行渲染脚本或截图；撤下皮肤或关闭启动器不等于关闭端口，须完整退出本次 ZCode，再从官方入口普通启动。未知版本拒绝，不修改安装文件，不创建自启或后台 watcher；详见启动器 [安全说明](https://github.com/lanmengSakura/diana-multi-app-launcher/blob/main/SECURITY.md)。
 
 ## 验证
 
